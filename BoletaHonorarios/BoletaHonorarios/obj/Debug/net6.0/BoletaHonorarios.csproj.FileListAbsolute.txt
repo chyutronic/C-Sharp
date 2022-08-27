@@ -1,0 +1,15 @@
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\bin\Debug\net6.0\BoletaHonorarios.exe
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\bin\Debug\net6.0\BoletaHonorarios.deps.json
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\bin\Debug\net6.0\BoletaHonorarios.runtimeconfig.json
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\bin\Debug\net6.0\BoletaHonorarios.dll
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\bin\Debug\net6.0\BoletaHonorarios.pdb
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.csproj.AssemblyReference.cache
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.AssemblyInfoInputs.cache
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.AssemblyInfo.cs
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.csproj.CoreCompileInputs.cache
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.dll
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\refint\BoletaHonorarios.dll
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.pdb
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\BoletaHonorarios.genruntimeconfig.cache
+C:\Users\chyut\source\repos\BoletaHonorarios\BoletaHonorarios\obj\Debug\net6.0\ref\BoletaHonorarios.dll

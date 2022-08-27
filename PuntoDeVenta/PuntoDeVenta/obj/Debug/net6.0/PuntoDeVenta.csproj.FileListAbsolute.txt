@@ -1,0 +1,15 @@
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\net6.0\PuntoDeVenta.exe
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\net6.0\PuntoDeVenta.deps.json
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\net6.0\PuntoDeVenta.runtimeconfig.json
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\net6.0\PuntoDeVenta.dll
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\net6.0\PuntoDeVenta.pdb
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.csproj.AssemblyReference.cache
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.AssemblyInfoInputs.cache
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.AssemblyInfo.cs
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.csproj.CoreCompileInputs.cache
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.dll
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\refint\PuntoDeVenta.dll
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.pdb
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\PuntoDeVenta.genruntimeconfig.cache
+C:\Users\chyut\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\net6.0\ref\PuntoDeVenta.dll
