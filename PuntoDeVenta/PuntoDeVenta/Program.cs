@@ -154,8 +154,6 @@ namespace PuntoDeVenta
 }//fin namespace PuntoDeVenta
 
 
-//FIN DEL PROGRAMA
-
 
 
 

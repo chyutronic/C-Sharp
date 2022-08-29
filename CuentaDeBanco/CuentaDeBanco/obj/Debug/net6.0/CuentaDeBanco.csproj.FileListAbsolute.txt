@@ -1,0 +1,15 @@
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\bin\Debug\net6.0\CuentaDeBanco.exe
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\bin\Debug\net6.0\CuentaDeBanco.deps.json
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\bin\Debug\net6.0\CuentaDeBanco.runtimeconfig.json
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\bin\Debug\net6.0\CuentaDeBanco.dll
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\bin\Debug\net6.0\CuentaDeBanco.pdb
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.csproj.AssemblyReference.cache
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.AssemblyInfoInputs.cache
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.AssemblyInfo.cs
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.csproj.CoreCompileInputs.cache
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.dll
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\refint\CuentaDeBanco.dll
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.pdb
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\CuentaDeBanco.genruntimeconfig.cache
+C:\Users\chyut\source\repos\CuentaDeBanco\CuentaDeBanco\obj\Debug\net6.0\ref\CuentaDeBanco.dll
