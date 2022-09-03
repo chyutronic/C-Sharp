@@ -32,7 +32,7 @@ namespace CuentaDeBanco
                 Console.WriteLine("MENU CAJERO AUTOMÁTICO:");
                 Console.WriteLine("");
 
-                if(passwordUsuarioCajero == Juan.password || passwordUsuarioCajero == Ana.password)
+                if(passwordUsuarioCajero == Juan.PASSWORD || passwordUsuarioCajero == Ana.PASSWORD)
                 {
                     Console.WriteLine("1. Consultar Saldo");
                     Console.WriteLine("2. Hacer depósito");
@@ -81,9 +81,9 @@ namespace CuentaDeBanco
                             Console.WriteLine("Ingrese la nueva contraseña de 4 digitos: ");
                             int newPassword = int.Parse(Console.ReadLine());
                             passwordUsuarioCajero = newPassword;
-                            Juan.cambiarContrasena(newPassword);
+                            Juan.PASSWORD = newPassword;
 
-                            Console.WriteLine($"Su password fue modificado con éxito y ahora es: {Juan.password}");
+                            Console.WriteLine($"Su password fue modificado con éxito y ahora es: {Juan.PASSWORD}");
                             Console.WriteLine(" ");
 
 
@@ -93,9 +93,9 @@ namespace CuentaDeBanco
                             Console.WriteLine("Ingrese la nueva contraseña de 4 digitos: ");
                             int newPassword = int.Parse(Console.ReadLine());
                             passwordUsuarioCajero = newPassword;
-                            Ana.cambiarContrasena(newPassword);
+                            Ana.PASSWORD = newPassword;
 
-                            Console.WriteLine($"Su password fue modificado con éxito y ahora es: {Ana.password}");
+                            Console.WriteLine($"Su password fue modificado con éxito y ahora es: {Ana.PASSWORD}");
                             Console.WriteLine(" ");
 
                         }
@@ -103,11 +103,11 @@ namespace CuentaDeBanco
 
                     if(op == "5")
                     {
-                        if(passwordUsuarioCajero == 1234)
+                        if(passwordUsuarioCajero == Juan.PASSWORD)
                         {
                             Juan.contratarProductos();
                         }
-                        else if(passwordUsuarioCajero == 4321)
+                        else if(passwordUsuarioCajero == Ana.PASSWORD)
                         {
                             Console.WriteLine("No tiene permiso para esta operación");
                             Console.WriteLine(" ");

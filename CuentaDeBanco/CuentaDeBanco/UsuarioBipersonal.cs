@@ -8,13 +8,23 @@ namespace CuentaDeBanco
 {
     class UsuarioBipersonal : Usuario
     {
-        public int password;
+        private int password;
 
         public UsuarioBipersonal(string nombre, string apellido, string rut, string direccion, int telefono, int password) : base(nombre, apellido, rut, direccion, telefono)
         {
             this.password = password;   
 
         }//fin constructor
+
+
+
+        public int PASSWORD
+        {
+            get { return password; }
+
+            set { this.password = cambiarContrasena(value); }
+        }
+
 
 
         public int cambiarContrasena(int newPassword)
