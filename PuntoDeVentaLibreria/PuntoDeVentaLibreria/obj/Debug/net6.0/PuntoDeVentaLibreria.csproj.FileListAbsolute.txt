@@ -1,0 +1,15 @@
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\bin\Debug\net6.0\PuntoDeVentaLibreria.exe
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\bin\Debug\net6.0\PuntoDeVentaLibreria.deps.json
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\bin\Debug\net6.0\PuntoDeVentaLibreria.runtimeconfig.json
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\bin\Debug\net6.0\PuntoDeVentaLibreria.dll
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\bin\Debug\net6.0\PuntoDeVentaLibreria.pdb
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.csproj.AssemblyReference.cache
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.AssemblyInfoInputs.cache
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.AssemblyInfo.cs
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.csproj.CoreCompileInputs.cache
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.dll
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\refint\PuntoDeVentaLibreria.dll
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.pdb
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\PuntoDeVentaLibreria.genruntimeconfig.cache
+C:\Users\chyut\source\repos\PuntoDeVentaLibreria\PuntoDeVentaLibreria\obj\Debug\net6.0\ref\PuntoDeVentaLibreria.dll
