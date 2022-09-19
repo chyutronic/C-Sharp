@@ -6,5 +6,6 @@ Aplicaciones desarrolladas en C# en Visual Studio 2022.
 2. App para ingresar productos y hacer ventas en un punto de venta.
 3. App calculadora con POO
 4. App cuenta de banco y cajero automático
+5. App para controlar las ventas de una libreria con conexión a BD
 
 
