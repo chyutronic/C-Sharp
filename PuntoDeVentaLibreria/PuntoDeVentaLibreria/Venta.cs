@@ -1,5 +1,7 @@
-﻿using System;
+﻿using PuntoDeVentaLibreria.Conexion;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,74 +11,74 @@ namespace PuntoDeVentaLibreria
     internal class Venta
     {
 
+        private string nombreTabla = "Venta";
+
+        private int monto;
         private string fecha;
         private string detalle;
-        private int total;
         private string medioPago;
-        private int idVenta;
-        private static int idVentaSiguiente = 10;
+        private int Id_libro;
+        private int Id_libreria;
+        private int Id_vendedor;
 
 
-        public Venta(string fecha, string detalle, int total, string medioPago)
+
+        public Venta(int monto, string fecha, string detalle, string medioPago, int id_libro, int id_libreria, int id_vendedor)
         {
-
+            this.monto = monto;
             this.fecha = fecha;
             this.detalle = detalle;
-            this.total = total;
             this.medioPago = medioPago;
-            idVenta = idVentaSiguiente;
-            idVentaSiguiente += 10;
-
+            this.Id_libro = id_libro;
+            this.Id_libreria = id_libreria;
+            this.Id_vendedor = id_vendedor;
+            //private int idVenta;
+            //private static int idVentaSiguiente = 10;
 
         }//fin constructor
 
 
-        //métodos setters
+        public Venta() { }//fin constructor2
 
 
-        public void SetFecha(string fecha)
+
+        //métodos getters y setters
+
+        public int MONTO { get => monto; set => monto = value; }
+        public string FECHA { get => fecha; set => fecha = value; }
+        public string DETALLE { get => detalle; set => detalle = value; }
+        public string MEDIO_PAGO { get => medioPago; set => medioPago = value; }
+        public int ID_LIBRO { get => Id_libro; set => Id_libro = value; }
+        public int ID_LIBRERIA { get => Id_libreria; set => Id_libreria = value; }
+        public int ID_VENDEDOR { get => Id_vendedor; set => Id_vendedor = value; }
+
+
+
+
+        //métodos para registrar y listar en BD
+        ConexionBD conn = new ConexionBD();
+
+        public bool registrarVentaBD()
         {
-            this.fecha = fecha;
+            string sql = "INSERT INTO Venta VALUES ('" + this.monto + "', '" + this.fecha + "', '" + this.detalle + "', '" + this.medioPago + "', '" + this.Id_libro + "', '" + this.Id_libreria + "', '" + this.Id_vendedor + "')";
+            if (conn.guardarSql(sql))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public void SetDetalle(string detalle)
+        public void listarVentaBD()
         {
-            this.detalle = detalle;
+            foreach (DataRow item in conn.listarSql(nombreTabla).Rows)
+            {
+                Console.WriteLine(item["Id_venta"].ToString() + " - " + item["Monto"].ToString() + " - " + item["Fecha"].ToString() + " - " + item["Detalle"].ToString() + " - " + item["Medio_pago"].ToString() + " - " + item["Id_libro"].ToString() + " - " + item["Id_libreria"].ToString() + " - " + item["Id_vendedor"].ToString());
+            }
+
         }
-
-        public void SetMedioPago(string medioPago)
-        {
-            this.medioPago = medioPago;
-        }
-
-
-        //métodos getters
-
-        public string GetFecha()
-        {
-            return fecha;
-        }
-
-        public string GetDetalle()
-        {
-            return detalle;
-        }
-
-        public int GetTotal()
-        {
-            return total;   
-        }
-
-        public string GetMedioPago()
-        {
-            return medioPago;
-        }
-
-        public int GetIdVenta()
-        {
-            return idVenta;
-        }
-
 
 
     }//fin class Venta

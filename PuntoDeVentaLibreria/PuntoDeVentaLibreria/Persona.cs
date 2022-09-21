@@ -26,6 +26,10 @@ namespace PuntoDeVentaLibreria
         }//fin constructor
 
 
+        public Persona() { }// fin constructor 2
+
+
+
         //métodos setters
         public void SetNombre(string nombre)
         {

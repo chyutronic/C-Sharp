@@ -11,16 +11,16 @@ namespace PuntoDeVentaLibreria
 
         private readonly string nombre;
         private readonly string direccion;
-        private int idLibreria;
-        private static int idLibreriaSiguiente = 10;
+        //private int idLibreria;
+        //private static int idLibreriaSiguiente = 10;
 
 
         public Libreria(string nombre, string direccion)
         {
             this.nombre = nombre;
             this.direccion = direccion;
-            idLibreria = idLibreriaSiguiente;
-            idLibreriaSiguiente += 10;
+            //idLibreria = idLibreriaSiguiente;
+            //idLibreriaSiguiente += 10;
 
         }//fin constructor
 
@@ -38,10 +38,13 @@ namespace PuntoDeVentaLibreria
         }
 
 
-        public int GetIdLibreria()
+        /*public int GetIdLibreria()
         {
             return idLibreria;
-        }
+        }*/
+
+
+
 
 
 
