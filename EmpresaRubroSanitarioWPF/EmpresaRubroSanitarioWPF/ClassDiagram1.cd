@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EmpresaRubroSanitarioWPF.CrudRequerimiento">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACAgAAQAAAQAAAAQAAAAAABAAAAAAAACAAAAA=</HashCode>
+      <FileName>CrudRequerimiento.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.CrudUsuarios">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIAAQCAAAAAAAAAACAAQAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>CrudUsuarios.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.ListaRequerimientos">
+    <Position X="15.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAQAAAAAAAAAIQAAQAQAAAAYAAAAAAAAAAE=</HashCode>
+      <FileName>ListaRequerimientos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.339" />
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.MainWindow">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAwCAYAAAAAAAAAgAAAAAACAAgAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.419" />
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.Principal">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAEAACAgAACAAQYAAABAGAAAAAAAAA=</HashCode>
+      <FileName>Principal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.Requerimientos">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAgAA=</HashCode>
+      <FileName>Requerimientos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.Users">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAgAAAAAIQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Users.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EmpresaRubroSanitarioWPF.Usuarios">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAgAA=</HashCode>
+      <FileName>Usuarios.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

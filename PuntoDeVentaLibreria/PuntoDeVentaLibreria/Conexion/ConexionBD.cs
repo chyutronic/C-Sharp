@@ -14,12 +14,9 @@ namespace PuntoDeVentaLibreria.Conexion
 {
     internal class ConexionBD
     {
-        //private string cadenaConexion = @"Data Source=(LocalBD)\MSSQLLocalDB; Initial Catalog=PuntoDeVentaLibreria; Integrated Security=True";
 
         string cadenaConexion = @"Data Source=YUTRO-ASUS; Initial Catalog=PuntoDeVentaLibreria; Integrated Security=True; TrustServerCertificate=True";
 
-
-        //string cadenaConexion = ConfigurationManager.ConnectionStrings["PuntoDeVentaLibreria.Properties.Settings.PuntoDeVentaLibreriaConnectionString"].ConnectionString;
 
         private SqlConnection conn;
         private SqlCommand comd;
@@ -69,6 +66,7 @@ namespace PuntoDeVentaLibreria.Conexion
             }
         }
 
+
         public DataTable listarSql(string tabla)
         {
             try 
@@ -91,9 +89,6 @@ namespace PuntoDeVentaLibreria.Conexion
             }
             return dtt;
         }
-
-
-
 
 
 

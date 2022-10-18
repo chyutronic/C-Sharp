@@ -30,4 +30,5 @@ namespace PuntoDeVenta
 
 
     }//fin clase Local
+
 }//fin namespace PuntoDeVenta

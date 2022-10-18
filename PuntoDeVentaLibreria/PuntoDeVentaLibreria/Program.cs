@@ -40,9 +40,11 @@ namespace PuntoDeVentaLibreria
 
             while (op != "7")
             {
-
+                Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("MENU:");
+                Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine(miLibreria.GetNombre() + " - " + miLibreria.GetDireccion());
+                Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("");
                 Console.WriteLine("1. Registrar Libros");
                 Console.WriteLine("2. Registrar Autores, Co-autores ó Co-co-autores");
@@ -52,6 +54,7 @@ namespace PuntoDeVentaLibreria
                 Console.WriteLine("6. Hacer Venta");
                 Console.WriteLine("7. Salir");
                 Console.WriteLine("");
+                Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("Digite una opción: ");
 
                 op = Console.ReadLine();
@@ -125,8 +128,11 @@ namespace PuntoDeVentaLibreria
                 {
                     while (op != "d")
                     {
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("MENU:");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine(miLibreria.GetNombre() + " - " + miLibreria.GetDireccion());
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("");
                         Console.WriteLine("¿Qué desea registrar?: ");
                         Console.WriteLine("");
@@ -135,6 +141,7 @@ namespace PuntoDeVentaLibreria
                         Console.WriteLine("c. Registrar Co-co-autores");
                         Console.WriteLine("d. Volver al menú principal");
                         Console.WriteLine(" ");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("Digite una opción: ");
 
                         op = Console.ReadLine();
@@ -241,9 +248,11 @@ namespace PuntoDeVentaLibreria
                 {
                     while(op != "c")
                     {
-
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("MENU:");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine(miLibreria.GetNombre() + " - " + miLibreria.GetDireccion());
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("");
                         Console.WriteLine("¿Qué desea registrar?: ");
                         Console.WriteLine("");
@@ -251,6 +260,7 @@ namespace PuntoDeVentaLibreria
                         Console.WriteLine("b. Registrar Repartidores");
                         Console.WriteLine("c. Volver al menú principal");
                         Console.WriteLine(" ");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("Digite una opción: ");
 
                         op = Console.ReadLine();
@@ -324,9 +334,11 @@ namespace PuntoDeVentaLibreria
                 {
                     while (op != "c")
                     {
-
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("MENU:");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine(miLibreria.GetNombre() + " - " + miLibreria.GetDireccion());
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("");
                         Console.WriteLine("¿Qué desea registrar?: ");
                         Console.WriteLine("");
@@ -334,6 +346,7 @@ namespace PuntoDeVentaLibreria
                         Console.WriteLine("b. Registrar Guía de Despacho");
                         Console.WriteLine("c. Volver al menú principal");
                         Console.WriteLine(" ");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("Digite una opción: ");
 
                         op = Console.ReadLine();
@@ -412,9 +425,11 @@ namespace PuntoDeVentaLibreria
                 {
                     while(op != "j")
                     {
-
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("MENU:");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine(miLibreria.GetNombre() + " - " + miLibreria.GetDireccion());
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("");
                         Console.WriteLine("¿Qué lista desea revisar?: ");
                         Console.WriteLine("");
@@ -429,6 +444,7 @@ namespace PuntoDeVentaLibreria
                         Console.WriteLine("i. Lista de Guías de despacho");
                         Console.WriteLine("j. Volver al menú principal");
                         Console.WriteLine(" ");
+                        Console.WriteLine("-------------------------------------");
                         Console.WriteLine("Digite una opción: ");
 
                         op = Console.ReadLine();
@@ -578,7 +594,7 @@ namespace PuntoDeVentaLibreria
                     Console.WriteLine("Ingrese el monto de la Venta: ");
                     int montoVendido = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Ingrese la fecha de la venta (AAAA-MM-DD): ");
+                    Console.WriteLine("Ingrese la fecha de la venta (dd-mm-aaaa): ");
                     string fechaVendido = Console.ReadLine();
 
                     Console.WriteLine("Ingrese título del libro o detalle de la venta: ");

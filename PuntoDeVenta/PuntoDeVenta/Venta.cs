@@ -62,7 +62,9 @@ namespace PuntoDeVenta
             return medioPago;
         }
 
+
     }//fin clase Venta
+
 }//fin namespace PuntoDeVenta
 
 

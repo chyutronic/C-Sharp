@@ -1,0 +1,142 @@
+﻿<Window x:Class="EmpresaRubroSanitarioWPF.Requerimientos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmpresaRubroSanitarioWPF"
+        mc:Ignorable="d"
+        Title="Requerimientos" 
+        Height="600" 
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <!--#region PROYECTO-->
+    <Border CornerRadius="10"
+            Background="GhostWhite">
+        <Grid Name="Principal"
+              Background="Transparent">
+            <!--#region HEADER-->
+            <Grid Name="Header"
+                  Height="35"
+                  VerticalAlignment="Top"
+                  Background="Transparent">
+                <Border CornerRadius="10,10,0,0"
+                        Background="#2E2F5B"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <!--#region TITLE-->
+                    <TextBlock Text="EMPRESA RUBRO SANITARIO"
+                               Grid.Column="1"
+                               Foreground="White"
+                               FontSize="20"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                    <!--#endregion-->
+                    <!--#region MINIMIZAR-->
+                    <Button x:Name="BtnMinimizar"
+                            Grid.Column="2"
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            Width="25"
+                            HorizontalAlignment="Left"
+                            Margin="268,5,0,5" Click="BtnMinimizar_Click">
+                        <Image Source="/SCS/IMG/minimizar.png"
+                               Cursor="Hand"/>
+                    </Button>
+                    <!--#endregion-->
+                    <!--#region CERRAR-->
+                    <Button x:Name="BtnCerrar"
+                            Grid.Column="2"
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            Width="25"
+                            HorizontalAlignment="Left"
+                            Margin="298,5,0,5" Click="BtnCerrar_Click">
+                        <Image Source="/SCS/IMG/cerrar.png"
+                               Cursor="Hand"/>
+                    </Button>
+                    <!--#endregion-->
+                </Grid>
+            </Grid>
+            <!--#endregion-->
+            <!--#region SIDEBAR-->
+            <Grid x:Name="GridMenu"
+                  Background="Transparent"
+                  Width="200"
+                  HorizontalAlignment="Left"
+                  Margin="0,35,0,0">
+                <Border Background="#505581"
+                        CornerRadius="0,0,0,10">
+                    <!--#region MENU-->
+                    <StackPanel Background="Transparent"
+                                VerticalAlignment="Top">
+                        <!--#region LISTA-->
+                        <ListView Background="Transparent"
+                                  BorderBrush="Transparent"
+                                  Margin="0,30,0,0"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                            <!--#region INGRESAR-->
+                            <ListViewItem Height="70">
+                                <Button x:Name="BtnRequerimientos"
+                                        Height="70"
+                                        Width="180"
+                                        HorizontalAlignment="Left"
+                                        Cursor="Hand"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent" Click="BtnRequerimientos_Click">
+                                    <Grid Width="180">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="60"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Width="40"
+                                               Grid.Column="0"
+                                               HorizontalAlignment="Center"
+                                               Source="/SCS/IMG/requerimiento.png"/>
+                                        <TextBlock Grid.Column="1"
+                                                   Text="INGRESAR"
+                                                   FontWeight="SemiBold"
+                                                   FontSize="15"
+                                                   VerticalAlignment="Center"
+                                                   HorizontalAlignment="Center"
+                                                   Foreground="White"/>
+                                    </Grid>
+                                </Button>
+                            </ListViewItem>
+                            <!--#endregion-->
+                        </ListView>
+                        <!--#endregion-->
+                    </StackPanel>
+                    <!--#endregion-->
+                </Border>    
+            </Grid>
+            <!--#endregion-->
+            <!--#region CONTENT-->
+            <Grid x:Name="GridContent"
+                  Background="Transparent"
+                  VerticalAlignment="Bottom"
+                  HorizontalAlignment="Right"
+                  Height="565"
+                  Width="800">
+                <Border CornerRadius="0,0,10,0"
+                        Background="#FAF0CA"/>
+                <TextBlock Text="A D M I N I S T R A D O R   D E   R E Q U E R I M I E N T O S"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="25"
+                           FontWeight="SemiBold"
+                           Foreground="#2E2F5B"/>
+                
+                <ContentControl Content="{Binding}"/>
+            </Grid>
+            <!--#endregion-->
+        </Grid>
+    </Border>
+    <!--#endregion-->
+</Window>

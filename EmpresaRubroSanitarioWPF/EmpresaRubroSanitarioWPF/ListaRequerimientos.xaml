@@ -1,0 +1,206 @@
+﻿<UserControl x:Class="EmpresaRubroSanitarioWPF.ListaRequerimientos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EmpresaRubroSanitarioWPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="565" 
+             d:DesignWidth="800"
+             Background="Transparent">
+    <!--#region CONTENIDO-->
+    <Border CornerRadius="10"
+            Background="#FAF0CA">
+        <Grid Name="GridRequerimientos">
+            <!--#region COLS & ROWS-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <!--#endregion-->
+            <!--#region TITULO-->
+            <TextBlock Grid.Row="0"
+                       Grid.ColumnSpan="6"
+                       Text="A D M I N I S T R A C I Ó N   D E   R E Q U E R I M I E N T O S"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Foreground="#2E2F5B"/>
+            <!--#endregion-->
+            <!--#region CREAR REQUERIMIENTO-->
+            <!--#region BTN CREAR REQUERIMIENTO-->
+            <Button Background="#505581"
+                    BorderBrush="#2E2F5B"
+                    Grid.Column="4"
+                    Grid.Row="2"
+                    Cursor="Hand"
+                    Width="180"
+                    x:Name="BtnCrearRequerimiento" 
+                    Click="AgregarRequerimiento">
+            <TextBlock Text="Agregar Requerimiento"
+                           Foreground="White"
+                           FontSize="15"/>
+            </Button>
+            <!--#endregion-->
+            <!--#endregion-->
+            <!--#region DATAGRID-->
+            <DataGrid Grid.Row="4"
+                      Grid.Column="1"
+                      Grid.RowSpan="2"
+                      Grid.ColumnSpan="4"
+                      x:Name="GridDatos"
+                      AutoGenerateColumns="False"
+                      Background="GhostWhite"
+                      Foreground="#2e2f5b"
+                      FontSize="15"
+                      CanUserAddRows="False"
+                      CanUserResizeColumns="True"
+                      CanUserResizeRows="False"
+                      CanUserSortColumns="False"
+                      RowBackground="Transparent"
+                      HeadersVisibility="Column"
+                      GridLinesVisibility="Horizontal"
+                      HorizontalGridLinesBrush="#2e2f5b">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Opciones de usuario"
+                                            Width="180">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <Button Content="Eliminar"
+                                            x:Name="BtnEliminar"
+                                            Background="#505581"
+                                            Width="80"
+                                            BorderBrush="Transparent"
+                                            Foreground="White"
+                                            CommandParameter="{Binding Id_requerimiento}" 
+                                            Click="Eliminar"/>
+                                    <Button Content="Estado"
+                                            x:Name="BtnResuelto"
+                                            Background="#505581"
+                                            Width="80"
+                                            BorderBrush="Transparent"
+                                            Foreground="White"
+                                            CommandParameter="{Binding Id_requerimiento}" 
+                                            Click="Actualizar"/>
+                                </DockPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="ID"
+                                        Width="30"
+                                        Binding="{Binding Id_requerimiento}"/>
+                    <DataGridTextColumn Header="Descripcion"
+                                        Width="*"
+                                        Binding="{Binding Descripcion}"/>
+                    <DataGridTextColumn Header="Estado"
+                                        Width="80"
+                                        Binding="{Binding Estado}"/>
+                    <DataGridTextColumn Header="Tipo Req."
+                                        Width="110"
+                                        Binding="{Binding Tipo_req}"/>
+                    <DataGridTextColumn Header="Prioridad"
+                                        Width="80"
+                                        Binding="{Binding Prioridad}"/>
+                    <DataGridTextColumn Header="Responsable"
+                                        Width="100"
+                                        Binding="{Binding Apellido}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <!--#endregion-->
+            <!--#region BUSCADOR-->
+            <!--#region TÍTULO-->
+            <TextBlock Grid.Row="7"
+                       Grid.ColumnSpan="6"
+                       Text="B U S C A D O R"
+                       FontSize="20"
+                       FontWeight="SemiBold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Foreground="#2E2F5B"/>
+            <!--#endregion-->
+            <!--#region CONTENIDO-->
+            <TextBlock Grid.Row="8"
+                       Grid.Column="1"
+                       Text="Tipo Requerimiento:"
+                       HorizontalAlignment="Center"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       Foreground="#2E2F5B"/>
+            <ComboBox Grid.Row="9"
+                       Grid.Column="1"
+                       x:Name="cbTipoRequerimiento"
+                      Height="30"
+                      Width="150"
+                      Text="Todos" SelectionChanged="BloquearPyPR"/>
+            <TextBlock Grid.Row="8"
+                       Grid.Column="2"
+                       Text="Prioridad:"
+                       HorizontalAlignment="Center"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       Foreground="#2E2F5B"/>
+            <ComboBox Grid.Row="9"
+                       Grid.Column="2"
+                       x:Name="cbPrioridad"
+                      Height="30"
+                      Width="150"
+                      Text="Todos" SelectionChanged="BloquearTRyPR"/>
+            <TextBlock Grid.Row="8"
+                       Grid.Column="3"
+                       Text="Pediente / Resuelto:"
+                       HorizontalAlignment="Center"
+                       FontSize="15"
+                       VerticalAlignment="Center"
+                       Foreground="#2E2F5B"/>
+            <ComboBox Grid.Row="9"
+                       Grid.Column="3"
+                       x:Name="cbPendienteResuelto"
+                      Height="30"
+                      Width="150"
+                      Text="Todos" SelectionChanged="BloquearTRyP"/>
+            <Button Background="#505581"
+                    BorderBrush="#2E2F5B"
+                    Grid.Column="4"
+                    Grid.Row="9"
+                    Cursor="Hand"
+                    Width="110"
+                    Height="30"
+                    x:Name="BtnBuscarRequerimiento" 
+                    Click="BuscarRequerimiento">
+                <TextBlock Text="Buscar"
+                           Foreground="White"
+                           FontSize="15"
+                           VerticalAlignment="Center"/>
+            </Button>
+            <!--#endregion-->
+            <!--#endregion-->
+            <!--#region FRAMEREQUERIMIENTOS-->
+            <Frame x:Name="FrameRequerimientos"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.RowSpan="11"
+                   Grid.ColumnSpan="6"/>
+            <!--#endregion-->
+        </Grid>
+    </Border>
+    <!--#endregion-->
+</UserControl>

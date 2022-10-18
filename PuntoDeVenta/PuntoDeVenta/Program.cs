@@ -50,6 +50,7 @@ namespace PuntoDeVenta
                     int cantidadProducto = int.Parse(Console.ReadLine());
 
                     Producto P = new Producto(nombreProducto, precioProducto, categoriaProducto, cantidadProducto);
+                    
                     Console.WriteLine("Producto listado correctamente..!\n" + P.GetCodigo() + " - " + P.GetNombre() + " - " + P.GetPrecio() + " - " + P.GetCategoria() + " - " + P.GetCantidad());
                     Console.WriteLine(" ");
 
@@ -114,6 +115,7 @@ namespace PuntoDeVenta
 
                             Venta V = new Venta(cantidadVendido, detalleVendido, totalVendido, medioPagoVendido);
                             listaVentas.Add(V);
+
                             p.SetCantidad(p.GetCantidad() - V.GetCantidad());
 
                             Console.WriteLine("Venta exitosa..!");
